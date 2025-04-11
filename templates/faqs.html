@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lemon Quality Detection - FAQs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 40px;
+      color: #2c3e50;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4b49ac;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4b49ac;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .faq {
+      margin-bottom: 25px;
+    }
+
+    .faq h3 {
+      cursor: pointer;
+      color: #2c3e50;
+      background: #e2e8f0;
+      padding: 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .faq h3:hover {
+      background: #d1d5db;
+    }
+
+    .faq p {
+      display: none;
+      background: #ffffff;
+      padding: 15px;
+      border-left: 4px solid #4b49ac;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      margin-top: 10px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="/" style="display: block; margin-bottom: 20px;">← Back to Home</a>
+
+  <h1>FAQs - Lemon Quality Detection</h1>
+
+  <div class="faq">
+    <h3>What is Lemon Quality Detection?</h3>
+    <p>It's a machine learning-based system that analyzes the visual characteristics of lemons to determine their quality.</p>
+  </div>
+
+  <div class="faq">
+    <h3>How does the system determine quality?</h3>
+    <p>The system uses image processing and a trained machine learning model to classify lemons as fresh, average, or spoiled based on their texture and color.</p>
+  </div>
+
+  <div class="faq">
+    <h3>What kind of images should I upload?</h3>
+    <p>Upload clear images of individual lemons against a plain background, with good lighting and without filters or blur.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Can I use images taken from my phone?</h3>
+    <p>Yes! As long as the image is clear and focused, mobile photos work perfectly.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Is this system accurate?</h3>
+    <p>The accuracy depends on the model training and image clarity. In tests, it achieved around 90% accuracy with high-quality input images.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Who can use this system?</h3>
+    <p>Farmers, vendors, and consumers who want to quickly assess the quality of lemons before buying or selling them.</p>
+  </div>
+
+  <div class="faq">
+    <h3>Will it work with other fruits?</h3>
+    <p>Currently, the model is trained only on lemons. Future versions may support other fruits based on demand.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Lemon Quality Detection | All rights reserved
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqs = document.querySelectorAll('.faq h3');
+      faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+          const answer = faq.nextElementSibling;
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
